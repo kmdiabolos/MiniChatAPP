@@ -60,6 +60,7 @@ public class LoginPage extends AppCompatActivity {
         sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // 아이디와 비밀번호가 맞으면을 체크해야되지만 구현하지못하여 바로 넘어간다.
                 login_page.setVisibility(View.GONE);
                 server_page.setVisibility(View.VISIBLE);
 
