@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:orientation="vertical"
+            android:layout_weight="0.77">
+
+            <TextView
+                android:id="@+id/last_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130dp"
+                android:text="수정해야될점을 적어주세요.!" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="477dp"
+            android:orientation="vertical"
+            android:background="@drawable/cmd"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/last_require"
+                android:layout_width="match_parent"
+                android:layout_height="319dp"
+                android:inputType="textPersonName"
+                android:hint="추가 개선사항"
+                android:textColor="#ffffff"
+                android:layout_weight="0.96" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/last_homebt"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/home"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <Button
+                        android:id="@+id/last_sendbtn"
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="개선사항 전송"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

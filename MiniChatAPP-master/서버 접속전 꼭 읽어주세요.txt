@@ -1,0 +1,28 @@
+꼭 읽어주세요.
+
+<minichat_v3 폴더>  서버실행기 : eclipse 로 server_launcher 를 이용해 실행 하였고
+
+<MiniChatAPP-master 폴더> 접속기 클라이언트 : 안드로이드 스튜디오 또는 핸드폰으로 실행하여 채팅앱 접속
+
+
+단. MiniChatAPP-master 파일에서 app -> java -> com.example.test2 -> LoginPage 에서
+
+LoginPage 코드중 아래쯤 (76번째줄)  connect.setOnClickListener((v)->{} ) 에서
+
+if() 문 안에 접속하려는 서버가 맞는지 아닌지 판별하기 위해 ip.equals(x) 의 x 에 IP를 미리 입력해 놓아야하는데
+
+이걸 존재하는 서버들을 배열(함수)로 만들려다가 제작중 쓰는 서버IP 가 2개뿐이라 그냥 직접 입력으로 했습니다..
+
+ip.equals("abc.ab.abc.abc") 에서 abc.ab.abc.abc를 접속하려는 서버의 IP로 바꿔적어주세요.
+
+
+ex) if(ip.equals("172.25.12.121")|| ip.equals("방치하거나 다른 IP로 바꿔도 됨."))
+
+
+
++ 아이디, 비밀번호도 LoginPage 에서 
+
+sign_in.setOnClickListener(v) 안에 적혀있듯이 
+  
+  ID : Administrator
+  PW : Password              로만 딱 1개 되도록 되있습니다.  추후 DB 연동 여러개
